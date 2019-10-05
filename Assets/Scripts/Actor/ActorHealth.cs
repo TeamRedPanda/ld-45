@@ -5,25 +5,25 @@ using UnityEngine.Events;
 
 public class ActorHealth : MonoBehaviour
 {
-    public int maxHealth;
-    public int currentHealth;
+    [SerializeField]private int m_MaxHealth;
+    private int m_CurrentHealth;
 
     // Start is called before the first frame update
     void Start()
     {
-            currentHealth = maxHealth;
+            m_CurrentHealth = m_MaxHealth;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if ( currentHealth <= 0 ) {
+        if ( m_CurrentHealth <= 0 ) {
             Destroy( gameObject );
         }
     }
 
     public void ApplyDamage( int damage )
     {
-        currentHealth -= damage;
+        m_CurrentHealth -= damage;
     }
 }
