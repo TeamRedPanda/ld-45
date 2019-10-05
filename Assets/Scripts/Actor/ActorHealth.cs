@@ -22,7 +22,7 @@ public class ActorHealth : MonoBehaviour
         }
     }
 
-    public void ApplyDamage( int damage )
+    public void TakeDamage( int damage )
     {
         m_CurrentHealth -= damage;
     }
