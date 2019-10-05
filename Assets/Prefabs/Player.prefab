@@ -198,6 +198,7 @@ GameObject:
   - component: {fileID: 430849352191686646}
   - component: {fileID: 9201345812078891769}
   - component: {fileID: 8132138153829492091}
+  - component: {fileID: 2940765707134784114}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -265,3 +266,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3128f38528771c743a7eee29e6cef91a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2940765707134784114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7938837959081745292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1124b27abc400e34eb482061f1bb07d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MaxHealth: 0
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null

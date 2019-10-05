@@ -8,6 +8,8 @@ public class ActorHealth : MonoBehaviour
     [SerializeField]private int m_MaxHealth;
     private int m_CurrentHealth;
 
+    [SerializeField]private UnityEvent OnDeath;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +20,7 @@ public class ActorHealth : MonoBehaviour
     void Update()
     {
         if ( m_CurrentHealth <= 0 ) {
-            Destroy( gameObject );
+            OnDeath.Invoke();
         }
     }
 
