@@ -34,6 +34,7 @@ public class ActorHealth : MonoBehaviour
     public void TakeDamage(int damage, Vector3 origin, float knockbackDistance)
     {
         m_CurrentHealth -= damage;
+        DamagePopupController.Instance.ShowDamage(this.transform.position, damage, Color.red);
         OnHealthChange.Invoke(m_CurrentHealth, m_MaxHealth);
         OnHitReceived.Invoke(origin, knockbackDistance);
 
