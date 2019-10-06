@@ -16,6 +16,7 @@ MonoBehaviour:
   DamageMax: 10
   HitLock: 0
   HitKnockBack: 0
-  WeaponPrefab: {fileID: 0}
+  WeaponPrefab: {fileID: 5223898179241636386, guid: 3f456989aa8dfde4fa3491359216b47a,
+    type: 3}
   HitAreaPrefab: {fileID: 2957504049969498927, guid: afcfe5a6b1b94f24bbce172abc7ce232,
     type: 3}
