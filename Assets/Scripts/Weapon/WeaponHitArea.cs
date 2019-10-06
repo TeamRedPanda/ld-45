@@ -23,7 +23,7 @@ class WeaponHitArea : MonoBehaviour
             Destroy(m_HitArea);
 
         m_HitArea = area;
-        area.transform.SetParent(this.gameObject.transform);
+        area.transform.SetParent(this.gameObject.transform, false);
     }
 
     public void EnableHitArea()
