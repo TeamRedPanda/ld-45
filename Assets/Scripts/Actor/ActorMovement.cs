@@ -16,6 +16,7 @@ public class ActorMovement : MonoBehaviour
     private Quaternion m_Heading;
 
     private bool m_IsStunned = false;
+    private bool m_AnimationLocked = false;
 
     void Awake()
     {
@@ -27,9 +28,19 @@ public class ActorMovement : MonoBehaviour
         m_Heading = transform.rotation;
     }
 
+    public void LockMovement()
+    {
+        m_AnimationLocked = true;
+    }
+
+    public void UnlockMovement()
+    {
+        m_AnimationLocked = false;
+    }
+
     public bool CanMove()
     {
-        return m_IsStunned == false;
+        return m_IsStunned == false && m_AnimationLocked == false;
     }
 
     public void Move(Vector3 direction, bool lookAt)
