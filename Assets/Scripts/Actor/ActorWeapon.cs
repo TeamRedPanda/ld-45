@@ -36,12 +36,17 @@ class ActorWeapon : MonoBehaviour
 
         // Instantiate if this has a weapon hit area (ranged weapons don't)
         if (m_Weapon.HitAreaPrefab)
-            m_WeaponHitArea.SetHitArea(Instantiate(m_Weapon.HitAreaPrefab, Vector3.zero, Quaternion.identity));
+            m_WeaponHitArea.SetHitArea(Instantiate(m_Weapon.HitAreaPrefab));
+    }
+
+    public void OnActivePhase()
+    {
+        m_Weapon.OnActivePhase(m_WeaponHitArea.HitArea);
     }
 
     public void ApplyDamage(ActorHealth actor)
     {
         int damage = Random.Range(m_Weapon.DamageMin, m_Weapon.DamageMax);
-        actor.TakeDamage(damage, this.gameObject.transform.position, m_Weapon.HitKnockBack);
+        actor.TakeDamage(damage, this.gameObject.transform.position, m_Weapon.HitKnockback);
     }
 }
