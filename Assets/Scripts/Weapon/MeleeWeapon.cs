@@ -5,6 +5,7 @@ public class MeleeWeapon : WeaponAsset
 {
     public override void Attack(GameObject actor)
     {
-        throw new System.NotImplementedException();
+        var animationController = actor.GetComponent<ActorAnimationController>();
+        animationController?.PlayAttackAnimation();
     }
 }
