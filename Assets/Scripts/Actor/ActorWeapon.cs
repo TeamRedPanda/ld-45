@@ -32,7 +32,7 @@ class ActorWeapon : MonoBehaviour
 
         // Instantiate if this has a weapon model.
         if (m_Weapon.WeaponPrefab)
-            Instantiate(m_Weapon.WeaponPrefab, Vector3.zero, Quaternion.identity, m_WeaponEquipParent);
+            Instantiate(m_Weapon.WeaponPrefab, m_WeaponEquipParent, false);
 
         // Instantiate if this has a weapon hit area (ranged weapons don't)
         if (m_Weapon.HitAreaPrefab)
