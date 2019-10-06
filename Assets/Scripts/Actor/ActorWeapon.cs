@@ -3,10 +3,10 @@ using Random = UnityEngine.Random;
 
 class ActorWeapon : MonoBehaviour
 {
-    [SerializeField] private WeaponHitArea m_WeaponHitArea = default;
-    [SerializeField] private Transform m_WeaponEquipParent = default;
+    [SerializeField] private WeaponHitArea m_WeaponHitArea;
+    [SerializeField] private Transform m_WeaponEquipParent;
 
-    [SerializeField] private WeaponAsset m_PreEquippedWeapon = default;
+    [SerializeField] private WeaponAsset m_PreEquippedWeapon;
 
     private WeaponAsset m_Weapon = default;
 
