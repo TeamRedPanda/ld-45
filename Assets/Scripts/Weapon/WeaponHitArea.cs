@@ -13,16 +13,16 @@ class WeaponHitArea : MonoBehaviour
 {
     public WeaponHitEvent OnHitEvent;
 
-    private GameObject m_HitArea;
+    public GameObject HitArea { get; private set; }
 
     private bool m_IsActive = false;
 
     public void SetHitArea(GameObject area)
     {
-        if (m_HitArea != null)
-            Destroy(m_HitArea);
+        if (HitArea != null)
+            Destroy(HitArea);
 
-        m_HitArea = area;
+        HitArea = area;
         area.transform.SetParent(this.gameObject.transform, false);
     }
 

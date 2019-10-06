@@ -16,7 +16,7 @@ public class ProjectileCollision : MonoBehaviour
         if (actorHealth) {
             OnHitEvent.Invoke(actorHealth);
         } else {
-            Debug.Log("Collided with wall?");
+            Debug.Log($"Collided with wall? {other.gameObject.name}");
         }
     }
 }

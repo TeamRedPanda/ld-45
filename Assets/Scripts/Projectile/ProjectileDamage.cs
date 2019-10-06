@@ -8,10 +8,10 @@ using Random = UnityEngine.Random;
 
 class ProjectileDamage : MonoBehaviour
 {
-    public int DamageMin;
-    public int DamageMax;
+    [HideInInspector] public int DamageMin;
+    [HideInInspector] public int DamageMax;
 
-    public float HitKnockback;
+    [HideInInspector] public float HitKnockback;
 
     public void ApplyDamage(ActorHealth actor)
     {

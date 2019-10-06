@@ -13,6 +13,6 @@ public class ProjectileMovement : MonoBehaviour
     void Awake()
     {
         m_Rigidbody = GetComponent<Rigidbody>();
-        m_Rigidbody.velocity = new Vector3(0, 0, Speed);
+        m_Rigidbody.velocity = transform.rotation * new Vector3(0, 0, Speed);
     }
 }
