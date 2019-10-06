@@ -420,6 +420,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_WeaponHitArea: {fileID: 1186421580272598406}
   m_WeaponEquipParent: {fileID: 5632773117348748023}
+  m_PreEquippedWeapon: {fileID: 11400000, guid: 6c15185834416cd4fae399e602a31ef7,
+    type: 2}
 --- !u!1 &8859046460318972673
 GameObject:
   m_ObjectHideFlags: 0

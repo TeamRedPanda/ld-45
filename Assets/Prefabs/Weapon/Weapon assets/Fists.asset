@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: Fists
+  m_EditorClassIdentifier: Assembly-CSharp::MeleeWeapon
+  DamageMin: 5
+  DamageMax: 10
+  HitLock: 0
+  HitKnockBack: 0
+  WeaponPrefab: {fileID: 0}
+  HitAreaPrefab: {fileID: 2957504049969498927, guid: afcfe5a6b1b94f24bbce172abc7ce232,
+    type: 3}
