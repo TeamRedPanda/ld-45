@@ -5,7 +5,6 @@ public abstract class WeaponAsset : ScriptableObject
     public int DamageMin;
     public int DamageMax;
 
-    public float HitLock;
     public float HitKnockBack;
 
     public GameObject WeaponPrefab;

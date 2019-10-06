@@ -5,21 +5,25 @@ using UnityEngine;
 using UnityEngine.Events;
 
 [System.Serializable]
-public class HealthChangedEvent : UnityEvent<float , float> { }
+public class HealthChangedEvent : UnityEvent<float, float> { }
+
+[System.Serializable]
+public class HitReceivedEvent : UnityEvent<Vector3, float> { }
 
 public class ActorHealth : MonoBehaviour
 {
-    [SerializeField]private int m_MaxHealth;
+    [SerializeField] private int m_MaxHealth;
     private int m_CurrentHealth;
 
-    [SerializeField]private UnityEvent OnDeath;
-    [SerializeField]private HealthChangedEvent OnHealthChange;
+    [SerializeField] private UnityEvent OnDeath;
+    [SerializeField] private HealthChangedEvent OnHealthChange;
+    [SerializeField] private HitReceivedEvent OnHitReceived;
 
     // Start is called before the first frame update
     void Start()
     {
         m_CurrentHealth = m_MaxHealth;
-        OnHealthChange.Invoke( m_CurrentHealth , m_MaxHealth );
+        OnHealthChange.Invoke(m_CurrentHealth, m_MaxHealth);
     }
 
     // Update is called once per frame
@@ -27,12 +31,13 @@ public class ActorHealth : MonoBehaviour
     {
     }
 
-    public void TakeDamage( int damage )
+    public void TakeDamage(int damage, Vector3 origin, float knockbackDistance)
     {
         m_CurrentHealth -= damage;
-        OnHealthChange.Invoke( m_CurrentHealth , m_MaxHealth );
+        OnHealthChange.Invoke(m_CurrentHealth, m_MaxHealth);
+        OnHitReceived.Invoke(origin, knockbackDistance);
 
-        if ( m_CurrentHealth <= 0 ) {
+        if (m_CurrentHealth <= 0) {
             OnDeath.Invoke();
         }
     }

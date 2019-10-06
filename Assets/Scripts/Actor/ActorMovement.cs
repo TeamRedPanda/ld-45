@@ -76,8 +76,9 @@ public class ActorMovement : MonoBehaviour
         m_CharacterController.Move(movement);
     }
 
-    public void Knockback(Vector3 direction, float distance)
+    public void Knockback(Vector3 origin, float distance)
     {
+        var direction = this.gameObject.transform.position - origin;
         StartCoroutine(KnockbackDistance(direction.normalized, distance, KnockbackTime));
     }
 

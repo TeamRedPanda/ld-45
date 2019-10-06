@@ -42,6 +42,6 @@ class ActorWeapon : MonoBehaviour
     public void ApplyDamage(ActorHealth actor)
     {
         int damage = Random.Range(m_Weapon.DamageMin, m_Weapon.DamageMax);
-        actor.TakeDamage(damage);
+        actor.TakeDamage(damage, this.gameObject.transform.position, m_Weapon.HitKnockBack);
     }
 }
