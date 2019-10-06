@@ -289,6 +289,7 @@ MonoBehaviour:
   Acceleration: 5
   Break: 5
   MaxSpeed: 10
+  KnockbackTime: 0.1
 --- !u!114 &2940765707134784114
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -311,6 +312,22 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: HealthChangedEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  OnHitReceived:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 9201345812078891769}
+        m_MethodName: Knockback
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: HitReceivedEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
 --- !u!95 &-3685471495050429115
 Animator:
@@ -421,8 +438,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_WeaponHitArea: {fileID: 1186421580272598406}
   m_WeaponEquipParent: {fileID: 5632773117348748023}
-  m_PreEquippedWeapon: {fileID: 11400000, guid: 6c15185834416cd4fae399e602a31ef7,
-    type: 2}
+  m_PreEquippedWeapon: {fileID: 0}
 --- !u!114 &819490803204869717
 MonoBehaviour:
   m_ObjectHideFlags: 0

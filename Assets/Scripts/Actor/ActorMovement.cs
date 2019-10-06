@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -17,6 +18,8 @@ public class ActorMovement : MonoBehaviour
 
     private bool m_IsStunned = false;
     private bool m_AnimationLocked = false;
+
+    public float KnockbackTime = 0.1f;
 
     void Awake()
     {
@@ -71,6 +74,30 @@ public class ActorMovement : MonoBehaviour
         movement.y = -9.81f * Time.deltaTime;
 
         m_CharacterController.Move(movement);
+    }
+
+    public void Knockback(Vector3 origin, float distance)
+    {
+        var direction = this.gameObject.transform.position - origin;
+        StartCoroutine(KnockbackDistance(direction.normalized, distance, KnockbackTime));
+    }
+
+    private IEnumerator KnockbackDistance(Vector3 direction, float totalDistance, float knockbackTime)
+    {
+        float travelledDistance = 0f;
+        float speed = totalDistance / knockbackTime;
+
+        while (travelledDistance < totalDistance) {
+            float distanceToTravel = speed * Time.deltaTime;
+
+            // Don't overshoot
+            if (travelledDistance + distanceToTravel > totalDistance)
+                distanceToTravel = totalDistance - travelledDistance;
+
+            travelledDistance += distanceToTravel;
+            m_CharacterController.Move(direction * distanceToTravel);
+            yield return 0;
+        }
     }
 
     public void Stun(float seconds)
