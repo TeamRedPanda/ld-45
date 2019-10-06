@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnvironmentBehaviour : MonoBehaviour
+public class LavaBehaviour : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -18,6 +18,5 @@ public class EnvironmentBehaviour : MonoBehaviour
 
     private void OnTriggerEnter( Collider other )
     {
-        other.GetComponent<ActorHealth>().TakeDamage(9999999);
     }
 }
