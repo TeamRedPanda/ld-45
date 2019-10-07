@@ -13,6 +13,9 @@ public class AnimationEventReceiver : MonoBehaviour
     public UnityEvent OnAttackAnimationStart;
     public UnityEvent OnBackswingAnimationStart;
 
+    [Header("Death")]
+    public UnityEvent OnDeathAnimationEnded;
+
     public void ActivePhaseStart()
     {
         OnActivePhaseStart.Invoke();
@@ -31,5 +34,10 @@ public class AnimationEventReceiver : MonoBehaviour
     public void BackswingAnimationStarted()
     {
         OnBackswingAnimationStart.Invoke();
+    }
+
+    public void DeathAnimationEnded()
+    {
+        OnDeathAnimationEnded.Invoke();
     }
 }
