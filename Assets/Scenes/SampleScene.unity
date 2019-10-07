@@ -399,9 +399,9 @@ PrefabInstance:
     - target: {fileID: 6921565500308248552, guid: b69395f3cbb73a04fa8aceee74a1550d,
         type: 3}
       propertyPath: m_Text
-      value: 'Slow attack
+      value: 'Medium attack
 
-        High damage'
+        Medium damage'
       objectReference: {fileID: 0}
     - target: {fileID: 6921565500308248552, guid: b69395f3cbb73a04fa8aceee74a1550d,
         type: 3}
