@@ -1093,23 +1093,38 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2755516181433648783, guid: e0dbb8513eba3cd46ba611855b11f0c7,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 2755516181433648783, guid: e0dbb8513eba3cd46ba611855b11f0c7,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 2755516181433648783, guid: e0dbb8513eba3cd46ba611855b11f0c7,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 2755516181433648783, guid: e0dbb8513eba3cd46ba611855b11f0c7,
+        type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2670318298636245182, guid: e0dbb8513eba3cd46ba611855b11f0c7,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2670318298636245182, guid: e0dbb8513eba3cd46ba611855b11f0c7,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2670318298636245182, guid: e0dbb8513eba3cd46ba611855b11f0c7,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2670318298636245182, guid: e0dbb8513eba3cd46ba611855b11f0c7,
         type: 3}
@@ -1153,8 +1168,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9201345812078891769, guid: e0dbb8513eba3cd46ba611855b11f0c7,
         type: 3}
-      propertyPath: MaxSpeed
-      value: 8
+      propertyPath: Acceleration
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 9201345812078891769, guid: e0dbb8513eba3cd46ba611855b11f0c7,
         type: 3}
@@ -1163,8 +1178,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9201345812078891769, guid: e0dbb8513eba3cd46ba611855b11f0c7,
         type: 3}
-      propertyPath: Acceleration
-      value: 40
+      propertyPath: MaxSpeed
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: -1088668400626013394, guid: e0dbb8513eba3cd46ba611855b11f0c7,
         type: 3}
@@ -1172,6 +1187,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 6aa58983b3ffa8a4796f692e13bea704,
         type: 2}
+    - target: {fileID: -3685471495050429115, guid: e0dbb8513eba3cd46ba611855b11f0c7,
+        type: 3}
+      propertyPath: m_Avatar
+      value: 
+      objectReference: {fileID: 9000000, guid: 4c93a8ac431b7c24cac48bfd04618c7c, type: 3}
+    - target: {fileID: -3685471495050429115, guid: e0dbb8513eba3cd46ba611855b11f0c7,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 457f292ae7b0ea642936b49178fa2c45, type: 2}
+    - target: {fileID: -3685471495050429115, guid: e0dbb8513eba3cd46ba611855b11f0c7,
+        type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2940765707134784114, guid: e0dbb8513eba3cd46ba611855b11f0c7,
         type: 3}
       propertyPath: OnHealthChange.m_PersistentCalls.m_Calls.Array.size
