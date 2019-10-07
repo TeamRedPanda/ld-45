@@ -31,6 +31,15 @@ public class ActorMovement : MonoBehaviour
         m_Heading = transform.rotation;
     }
 
+    void Update()
+    {
+        // Gravity
+        var movement = new Vector3();
+        movement.y = -9.81f * Time.deltaTime;
+
+        m_CharacterController.Move(movement);
+    }
+
     public void LockMovement()
     {
         m_AnimationLocked = true;
@@ -69,9 +78,6 @@ public class ActorMovement : MonoBehaviour
 
         // Running
         var movement = m_Heading * Vector3.forward * Speed * Time.deltaTime;
-
-        // Gravity
-        movement.y = -9.81f * Time.deltaTime;
 
         m_CharacterController.Move(movement);
     }

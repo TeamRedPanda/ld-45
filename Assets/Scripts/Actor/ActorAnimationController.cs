@@ -27,6 +27,11 @@ class ActorAnimationController : MonoBehaviour
         m_Animator.SetTrigger(attackAnimationTrigger);
     }
 
+    public void PlayHitAnimation()
+    {
+        m_Animator.SetTrigger("React_Hit");
+    }
+
     public void PlayDeathAnimation()
     {
         m_Animator.SetTrigger("Die");
