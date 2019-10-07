@@ -19,5 +19,6 @@ MonoBehaviour:
     type: 3}
   HitAreaPrefab: {fileID: 3119949630118693318, guid: afbb219cb7e1b914b8137a430b0e94b1,
     type: 3}
+  AttackAnimationTrigger: Attack_Wand
   ProjectilePrefab: {fileID: 165894041686075244, guid: 4f8eea3f5e4538047bc43a2f7e19ba4d,
     type: 3}

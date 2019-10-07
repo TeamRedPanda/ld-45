@@ -19,3 +19,4 @@ MonoBehaviour:
     type: 3}
   HitAreaPrefab: {fileID: 2957504049969498927, guid: afcfe5a6b1b94f24bbce172abc7ce232,
     type: 3}
+  AttackAnimationTrigger: Attack_Sword
