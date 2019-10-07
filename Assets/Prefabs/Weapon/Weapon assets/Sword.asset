@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca8dea59393988a45a2898c3c66c8eba, type: 3}
+  m_Name: Sword
+  m_EditorClassIdentifier: Assembly-CSharp::MeleeWeapon
+  DamageMin: 5
+  DamageMax: 5
+  HitKnockback: 0.5
+  WeaponPrefab: {fileID: 651232746440378089, guid: 7a2a1e2caf246894f8dd16d254d578a0,
+    type: 3}
+  HitAreaPrefab: {fileID: 2957504049969498927, guid: afcfe5a6b1b94f24bbce172abc7ce232,
+    type: 3}
+  AttackAnimationTrigger: Attack_Sword

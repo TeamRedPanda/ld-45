@@ -15,7 +15,7 @@ public class ActorHealth : MonoBehaviour
     [SerializeField] private int m_MaxHealth;
     private int m_CurrentHealth;
 
-    [SerializeField] private UnityEvent OnDeath;
+    public UnityEvent OnDeath;
     [SerializeField] private HealthChangedEvent OnHealthChange;
     [SerializeField] private HitReceivedEvent OnHitReceived;
 

@@ -43,7 +43,6 @@ class WeaponHitArea : MonoBehaviour
 
     void OnTriggerStay(Collider other)
     {
-        Debug.Log(other.gameObject.name);
         var actorHealth = other.gameObject.GetComponentInParent<ActorHealth>();
         var alreadyHit = m_ActorsHit.Contains(actorHealth);
         if (actorHealth && m_IsActive && alreadyHit == false) {

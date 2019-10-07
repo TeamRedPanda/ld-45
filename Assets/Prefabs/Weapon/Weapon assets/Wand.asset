@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3b44c5b90cadbab43970df72957cc8b6, type: 3}
-  m_Name: TestWand
+  m_Name: Wand
   m_EditorClassIdentifier: 
   DamageMin: 8
   DamageMax: 12
   HitKnockback: 0.5
-  WeaponPrefab: {fileID: 5223898179241636386, guid: 3f456989aa8dfde4fa3491359216b47a,
+  WeaponPrefab: {fileID: 8124393324247436322, guid: 28d1a2868ed63a343b49596b120bd2c6,
     type: 3}
   HitAreaPrefab: {fileID: 3119949630118693318, guid: afbb219cb7e1b914b8137a430b0e94b1,
     type: 3}

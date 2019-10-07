@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b44c5b90cadbab43970df72957cc8b6, type: 3}
+  m_Name: Bow
+  m_EditorClassIdentifier: 
+  DamageMin: 8
+  DamageMax: 12
+  HitKnockback: 0.5
+  WeaponPrefab: {fileID: 176992909152502508, guid: 99b16ca5e6170c349ac6c214f777031e,
+    type: 3}
+  HitAreaPrefab: {fileID: 3119949630118693318, guid: afbb219cb7e1b914b8137a430b0e94b1,
+    type: 3}
+  AttackAnimationTrigger: Attack_Bow
+  ProjectilePrefab: {fileID: 165894041686075244, guid: 4f8eea3f5e4538047bc43a2f7e19ba4d,
+    type: 3}
