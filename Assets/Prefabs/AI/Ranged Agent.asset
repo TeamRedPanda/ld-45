@@ -13,3 +13,5 @@ MonoBehaviour:
   m_Name: Ranged Agent
   m_EditorClassIdentifier: Assembly-CSharp::RangedAgent
   AttackDistance: 8
+  AttackRate: 3
+  TimeUntilNextAttack: 0

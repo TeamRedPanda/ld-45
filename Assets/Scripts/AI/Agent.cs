@@ -9,5 +9,8 @@ public abstract class Agent : ScriptableObject
 {
     [SerializeField] protected float AttackDistance;
 
+    public float AttackRate;
+    [HideInInspector] public float TimeUntilNextAttack = 0;
+
     public abstract void Process(ActorAI actorAI);
 }

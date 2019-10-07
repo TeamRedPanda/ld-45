@@ -61,6 +61,11 @@ public class ActorMovement : MonoBehaviour
         transform.rotation = m_Heading;
     }
 
+    public void StopMovement()
+    {
+        Speed = 0;
+    }
+
     public void Move(Vector3 direction, bool lookAt)
     {
         if (CanMove() == false)

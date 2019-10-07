@@ -13,3 +13,5 @@ MonoBehaviour:
   m_Name: Melee Agent
   m_EditorClassIdentifier: Assembly-CSharp::MeleeAgent
   AttackDistance: 2
+  AttackRate: 1.5
+  TimeUntilNextAttack: 0

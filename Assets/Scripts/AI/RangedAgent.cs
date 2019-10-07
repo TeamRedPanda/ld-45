@@ -7,9 +7,12 @@ public class RangedAgent : Agent
     {
         if (actorAI.PlayerDistance <= AttackDistance) {
             actorAI.ActorMovement.LookAt(actorAI.PlayerDirection);
-            if (actorAI.CanAttack) {
+            actorAI.ActorMovement.StopMovement();
+            TimeUntilNextAttack -= Time.deltaTime;
+            if (actorAI.CanAttack && TimeUntilNextAttack <= 0f) {
                 actorAI.ActorWeapon.Attack();
                 actorAI.CanAttack = false;
+                TimeUntilNextAttack = AttackRate;
             }
         } else {
             actorAI.ActorMovement.Move(actorAI.PlayerDirection, true);
