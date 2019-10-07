@@ -1238,6 +1238,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1008960165579594242}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &451699993
@@ -1295,6 +1306,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1008960165579594242}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &867602912
@@ -1347,6 +1369,17 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 11400000, guid: 6aa58983b3ffa8a4796f692e13bea704,
             type: 2}
           m_ObjectArgumentAssemblyTypeName: WeaponAsset, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1008960165579594242}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1881,12 +1914,12 @@ PrefabInstance:
     - target: {fileID: 7930518754091244233, guid: 792f9ca8b970a3b4e8eff7999c399504,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.48959607
+      value: -0.4895935
       objectReference: {fileID: 0}
     - target: {fileID: 7930518754091244233, guid: 792f9ca8b970a3b4e8eff7999c399504,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -2.838904
+      value: -2.8389053
       objectReference: {fileID: 0}
     - target: {fileID: 7930518754091244233, guid: 792f9ca8b970a3b4e8eff7999c399504,
         type: 3}
