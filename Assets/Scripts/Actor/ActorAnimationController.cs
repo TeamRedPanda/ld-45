@@ -5,14 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
 
-[RequireComponent(typeof(Animator))]
 class ActorAnimationController : MonoBehaviour
 {
     private Animator m_Animator;
 
     void Awake()
     {
-        m_Animator = GetComponent<Animator>();
+        m_Animator = GetComponentInChildren<Animator>();
     }
 
     public void PlayAttackAnimation()
