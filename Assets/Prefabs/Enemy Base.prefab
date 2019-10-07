@@ -215,6 +215,7 @@ MonoBehaviour:
   ActorWeapon: {fileID: 9181091386069072112}
   Player: {fileID: 0}
   Agent: {fileID: 0}
+  CanAttack: 1
 --- !u!1 &8927368318568493926
 GameObject:
   m_ObjectHideFlags: 0
@@ -483,6 +484,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_MaxHealth
       value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 4440896662786100250, guid: e0dbb8513eba3cd46ba611855b11f0c7,
+        type: 3}
+      propertyPath: OnBackswingAnimationStart.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4440896662786100250, guid: e0dbb8513eba3cd46ba611855b11f0c7,
+        type: 3}
+      propertyPath: OnBackswingAnimationStart.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4440896662786100250, guid: e0dbb8513eba3cd46ba611855b11f0c7,
+        type: 3}
+      propertyPath: OnBackswingAnimationStart.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4440896662786100250, guid: e0dbb8513eba3cd46ba611855b11f0c7,
+        type: 3}
+      propertyPath: OnBackswingAnimationStart.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1087421799597857408}
+    - target: {fileID: 4440896662786100250, guid: e0dbb8513eba3cd46ba611855b11f0c7,
+        type: 3}
+      propertyPath: OnBackswingAnimationStart.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: OnAttackLanded
+      objectReference: {fileID: 0}
+    - target: {fileID: 4440896662786100250, guid: e0dbb8513eba3cd46ba611855b11f0c7,
+        type: 3}
+      propertyPath: OnBackswingAnimationStart.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8154702925229688159, guid: e0dbb8513eba3cd46ba611855b11f0c7,
         type: 3}

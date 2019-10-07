@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea0f3faeda1ad6b47bc3b1aa4024ada2, type: 3}
   m_Name: Melee Agent
   m_EditorClassIdentifier: Assembly-CSharp::MeleeAgent
-  AttackDistance: 1
+  AttackDistance: 2

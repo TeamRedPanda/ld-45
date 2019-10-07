@@ -7,7 +7,10 @@ public class MeleeAgent : Agent
     {
         if (actorAI.PlayerDistance <= AttackDistance) {
             actorAI.ActorMovement.LookAt(actorAI.PlayerDirection);
-            actorAI.ActorWeapon.Attack();
+            if (actorAI.CanAttack) {
+                actorAI.ActorWeapon.Attack();
+                actorAI.CanAttack = false;
+            }
         } else {
             actorAI.ActorMovement.Move(actorAI.PlayerDirection, true);
         }

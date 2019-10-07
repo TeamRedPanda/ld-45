@@ -13,6 +13,13 @@ public class ActorAI : MonoBehaviour
     public Vector3 PlayerDirection { get; private set; }
     public float PlayerDistance { get; private set; }
 
+    public bool CanAttack = true;
+
+    public void OnAttackLanded()
+    {
+        CanAttack = true;
+    }
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -23,8 +30,10 @@ public class ActorAI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        PlayerDirection = this.transform.position - Player.transform.position;
+        PlayerDirection = Player.transform.position - this.transform.position;
         PlayerDistance = PlayerDirection.magnitude;
+
+        Debug.Log($"{PlayerDistance}");
 
         Agent.Process(this);
     }
