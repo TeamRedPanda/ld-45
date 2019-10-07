@@ -26,5 +26,10 @@ class ActorAnimationController : MonoBehaviour
     {
         m_Animator.SetTrigger(attackAnimationTrigger);
     }
+
+    public void PlayDeathAnimation()
+    {
+        m_Animator.SetTrigger("Die");
+    }
 }
 
