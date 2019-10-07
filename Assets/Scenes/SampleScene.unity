@@ -132,6 +132,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Item Selection UI
       objectReference: {fileID: 0}
+    - target: {fileID: 1008960165579594242, guid: b69395f3cbb73a04fa8aceee74a1550d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1008960165579594243, guid: b69395f3cbb73a04fa8aceee74a1550d,
         type: 3}
       propertyPath: m_LocalPosition.x
