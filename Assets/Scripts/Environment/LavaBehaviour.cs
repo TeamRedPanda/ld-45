@@ -18,5 +18,8 @@ public class LavaBehaviour : MonoBehaviour
 
     private void OnTriggerEnter( Collider other )
     {
+        var actorHealth = other.gameObject.GetComponentInParent<ActorHealth>();
+        if (actorHealth)
+            actorHealth.InstantDeath();
     }
 }
