@@ -22,9 +22,9 @@ class ActorAnimationController : MonoBehaviour
         m_Animator.SetFloat("Speed", m_ActorMovement.Speed);
     }
 
-    public void PlayAttackAnimation()
+    public void PlayAttackAnimation(string attackAnimationTrigger)
     {
-        m_Animator.SetTrigger("Attack");
+        m_Animator.SetTrigger(attackAnimationTrigger);
     }
 }
 

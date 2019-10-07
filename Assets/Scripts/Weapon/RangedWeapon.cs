@@ -5,12 +5,6 @@ public class RangedWeapon : WeaponAsset
 {
     public GameObject ProjectilePrefab;
 
-    public override void Attack(GameObject actor)
-    {
-        var animationController = actor.GetComponent<ActorAnimationController>();
-        animationController?.PlayAttackAnimation();
-    }
-
     public override void OnActivePhase(GameObject hitArea)
     {
         var position = hitArea.transform.position;
