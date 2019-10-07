@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e2ead8317fddc54c9d0dbf227453ae0, type: 3}
   m_Name: Ranged Agent
   m_EditorClassIdentifier: Assembly-CSharp::RangedAgent
-  AttackDistance: 15
+  AttackDistance: 8
