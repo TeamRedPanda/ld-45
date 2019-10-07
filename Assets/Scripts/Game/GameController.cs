@@ -83,6 +83,8 @@ public class GameController : MonoBehaviour
             currentSpawnPoint++;
             CurrentAliveEnemies++;
         }
+
+        Debug.Log($"Current stage has {CurrentAliveEnemies} enemies.");
     }
 
     void SpawnEnemy(WeaponAsset weapon, GameObject spawnPoint)
@@ -99,6 +101,8 @@ public class GameController : MonoBehaviour
     void OnEnemyDeath()
     {
         CurrentAliveEnemies--;
+
+        Debug.Log($"Enemy died, {CurrentAliveEnemies} remaining.");
 
         if (CurrentAliveEnemies == 0) {
             m_WeaponSelectWindow.SetActive(true);

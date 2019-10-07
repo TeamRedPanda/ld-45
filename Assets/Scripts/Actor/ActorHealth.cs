@@ -19,6 +19,8 @@ public class ActorHealth : MonoBehaviour
     [SerializeField] private HealthChangedEvent OnHealthChange;
     [SerializeField] private HitReceivedEvent OnHitReceived;
 
+    private bool m_IsDead = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,13 +28,11 @@ public class ActorHealth : MonoBehaviour
         OnHealthChange.Invoke(m_CurrentHealth, m_MaxHealth);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-    }
-
     public void InstantDeath()
     {
+        if (m_IsDead)
+            return;
+
         m_CurrentHealth = 0;
         OnHealthChange.Invoke(m_CurrentHealth, m_MaxHealth);
         OnDeath.Invoke();
@@ -40,12 +40,16 @@ public class ActorHealth : MonoBehaviour
 
     public void TakeDamage(int damage, Vector3 origin, float knockbackDistance)
     {
+        if (m_IsDead)
+            return;
+
         m_CurrentHealth -= damage;
         DamagePopupController.Instance.ShowDamage(this.transform.position, damage, Color.red);
         OnHealthChange.Invoke(m_CurrentHealth, m_MaxHealth);
         OnHitReceived.Invoke(origin, knockbackDistance);
 
         if (m_CurrentHealth <= 0) {
+            m_IsDead = true;
             OnDeath.Invoke();
         }
     }
