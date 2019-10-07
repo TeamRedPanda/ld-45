@@ -33,8 +33,6 @@ public class ActorAI : MonoBehaviour
         PlayerDirection = Player.transform.position - this.transform.position;
         PlayerDistance = PlayerDirection.magnitude;
 
-        Debug.Log($"{PlayerDistance}");
-
         Agent.Process(this);
     }
 }
