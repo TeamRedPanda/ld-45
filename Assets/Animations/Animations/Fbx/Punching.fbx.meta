@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: f9267853b6d662d47b732175166defde
+guid: fa09709675a78fd4e80387dd5abbc259
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable:
   - first:
       74: -203655887218126122
-    second: mixamo.com
+    second: Humanoid@Punching
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -35,11 +35,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: mixamo.com
+      name: Humanoid@Punching
       takeName: mixamo.com
       internalID: -203655887218126122
       firstFrame: 0
-      lastFrame: 122
+      lastFrame: 51
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
