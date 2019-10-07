@@ -13,7 +13,7 @@ public class ActorMovement : MonoBehaviour
 
     public float MaxSpeed = 10;
 
-    private float m_CurrentSpeed;
+    public float Speed { get; private set; }
     private Quaternion m_Heading;
 
     private bool m_IsStunned = false;
@@ -53,10 +53,10 @@ public class ActorMovement : MonoBehaviour
 
         if (direction.sqrMagnitude <= 0.1) {
             // We don't have any input, start breaking
-            m_CurrentSpeed -= Break * Time.deltaTime;
+            Speed -= Break * Time.deltaTime;
         } else {
             // We are moving, start accelerating
-            m_CurrentSpeed += direction.magnitude * Acceleration * Time.deltaTime;
+            Speed += direction.magnitude * Acceleration * Time.deltaTime;
 
             if (lookAt) {
                 m_Heading = Quaternion.LookRotation(direction);
@@ -65,10 +65,10 @@ public class ActorMovement : MonoBehaviour
         }
 
         // Can't go beyond max speed or below 0.
-        m_CurrentSpeed = Mathf.Clamp(m_CurrentSpeed, 0f, MaxSpeed);
+        Speed = Mathf.Clamp(Speed, 0f, MaxSpeed);
 
         // Running
-        var movement = m_Heading * Vector3.forward * m_CurrentSpeed * Time.deltaTime;
+        var movement = m_Heading * Vector3.forward * Speed * Time.deltaTime;
 
         // Gravity
         movement.y = -9.81f * Time.deltaTime;
