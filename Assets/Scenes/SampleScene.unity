@@ -425,9 +425,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 6aa58983b3ffa8a4796f692e13bea704, type: 2}
   m_SpawnInfos:
   - FistCount: 1
-    SwordCount: 0
-    BowCount: 0
-    WandCount: 0
+    SwordCount: 1
+    BowCount: 1
+    WandCount: 1
   - FistCount: 2
     SwordCount: 0
     BowCount: 0
@@ -1305,6 +1305,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 754887309926768735, guid: 0fbd93d9e51995f4f8d84cb9fdc471b5,
+        type: 3}
+      propertyPath: m_PreEquippedWeapon
+      value: 
+      objectReference: {fileID: 11400000, guid: 27186af018600df4184879bed8fe121e,
+        type: 2}
     - target: {fileID: 5931822409462552835, guid: 0fbd93d9e51995f4f8d84cb9fdc471b5,
         type: 3}
       propertyPath: OnDeath.m_PersistentCalls.m_Calls.Array.data[1].m_Target
@@ -1315,12 +1321,6 @@ PrefabInstance:
       propertyPath: OnHealthChange.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1897717944688477255}
-    - target: {fileID: 754887309926768735, guid: 0fbd93d9e51995f4f8d84cb9fdc471b5,
-        type: 3}
-      propertyPath: m_PreEquippedWeapon
-      value: 
-      objectReference: {fileID: 11400000, guid: 27186af018600df4184879bed8fe121e,
-        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0fbd93d9e51995f4f8d84cb9fdc471b5, type: 3}
 --- !u!1 &1513005034

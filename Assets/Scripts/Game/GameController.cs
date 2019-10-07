@@ -90,6 +90,7 @@ public class GameController : MonoBehaviour
         int enemyPrefab = Random.Range(0, m_EnemyPrefabs.Length);
 
         var enemyGO = Instantiate(m_EnemyPrefabs[enemyPrefab], spawnPoint.transform.position, spawnPoint.transform.rotation, m_EnemySpawnParent.transform);
+        enemyGO.GetComponent<ActorWeapon>().EquipWeapon(weapon);
         enemyGO.GetComponent<ActorHealth>().OnDeath.AddListener(OnEnemyDeath);
     }
 
