@@ -450,6 +450,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9201345812078891769, guid: e0dbb8513eba3cd46ba611855b11f0c7,
+        type: 3}
+      propertyPath: MaxSpeed
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 2940765707134784114, guid: e0dbb8513eba3cd46ba611855b11f0c7,
         type: 3}
       propertyPath: OnHealthChange.m_PersistentCalls.m_Calls.Array.size

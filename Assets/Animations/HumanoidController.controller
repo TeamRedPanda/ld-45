@@ -149,7 +149,7 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
---- !u!1101 &-4415018910846742145
+--- !u!1101 &-4473251497982042480
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -558,8 +558,8 @@ AnimatorStateMachine:
   - {fileID: -1736575949857927667}
   - {fileID: -4093143692931518108}
   - {fileID: 4625878464628696345}
-  - {fileID: -4415018910846742145}
   - {fileID: -4738978660715341616}
+  - {fileID: -4473251497982042480}
   m_EntryTransitions: []
   m_StateMachineTransitions: {}
   m_StateMachineBehaviours: []
