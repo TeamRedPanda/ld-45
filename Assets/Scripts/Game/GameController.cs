@@ -92,6 +92,8 @@ public class GameController : MonoBehaviour
         var enemyGO = Instantiate(m_EnemyPrefabs[enemyPrefab], spawnPoint.transform.position, spawnPoint.transform.rotation, m_EnemySpawnParent.transform);
         enemyGO.GetComponent<ActorWeapon>().EquipWeapon(weapon);
         enemyGO.GetComponent<ActorHealth>().OnDeath.AddListener(OnEnemyDeath);
+        enemyGO.GetComponent<ActorAI>().Player = m_Player;
+        enemyGO.GetComponent<ActorAI>().Agent = weapon.AIAgent;
     }
 
     void OnEnemyDeath()

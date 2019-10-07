@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using Random = UnityEngine.Random;
 
-class ActorWeapon : MonoBehaviour
+public class ActorWeapon : MonoBehaviour
 {
     [SerializeField] private WeaponHitArea m_WeaponHitArea;
     [SerializeField] private Transform m_WeaponEquipParent;

@@ -19,4 +19,5 @@ MonoBehaviour:
     type: 3}
   HitAreaPrefab: {fileID: 2957504049969498927, guid: afcfe5a6b1b94f24bbce172abc7ce232,
     type: 3}
+  AIAgent: {fileID: 11400000, guid: 15b96633d10dddd43b82d882a0066cfb, type: 2}
   AttackAnimationTrigger: Attack_Sword

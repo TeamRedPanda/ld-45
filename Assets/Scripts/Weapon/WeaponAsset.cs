@@ -10,6 +10,8 @@ public abstract class WeaponAsset : ScriptableObject
     public GameObject WeaponPrefab;
     public GameObject HitAreaPrefab;
 
+    public Agent AIAgent;
+
     public string AttackAnimationTrigger;
 
     public virtual void Attack(GameObject actor)

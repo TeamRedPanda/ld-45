@@ -55,6 +55,12 @@ public class ActorMovement : MonoBehaviour
         return m_IsStunned == false && m_AnimationLocked == false;
     }
 
+    public void LookAt(Vector3 direction)
+    {
+        m_Heading = Quaternion.LookRotation(direction);
+        transform.rotation = m_Heading;
+    }
+
     public void Move(Vector3 direction, bool lookAt)
     {
         if (CanMove() == false)
