@@ -1309,7 +1309,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_PreEquippedWeapon
       value: 
-      objectReference: {fileID: 11400000, guid: 27186af018600df4184879bed8fe121e,
+      objectReference: {fileID: 11400000, guid: 7ef3a673926d1004e9adad0998481454,
         type: 2}
     - target: {fileID: 5931822409462552835, guid: 0fbd93d9e51995f4f8d84cb9fdc471b5,
         type: 3}
