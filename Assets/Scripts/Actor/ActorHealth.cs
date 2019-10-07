@@ -31,6 +31,13 @@ public class ActorHealth : MonoBehaviour
     {
     }
 
+    public void InstantDeath()
+    {
+        m_CurrentHealth = 0;
+        OnHealthChange.Invoke(m_CurrentHealth, m_MaxHealth);
+        OnDeath.Invoke();
+    }
+
     public void TakeDamage(int damage, Vector3 origin, float knockbackDistance)
     {
         m_CurrentHealth -= damage;

@@ -9,6 +9,7 @@ using UnityEngine;
 class DamagePopupController : SingletonBehaviour<DamagePopupController>
 {
     public FloatingText DamagePopupPrefab;
+    public FloatingIcon DeathEmotePrefab;
 
     public void ShowDamage(Vector3 position, float value, Color color)
     {
@@ -19,5 +20,13 @@ class DamagePopupController : SingletonBehaviour<DamagePopupController>
         floatingText.Color = color;
 
         floatingText.GetComponent<RectTransform>().position = posInScreen;
+    }
+
+    internal void ShowDeath(Vector3 position)
+    {
+        Vector2 posInScreen = Camera.main.WorldToScreenPoint(position);
+
+        var floatingIcon = Instantiate(DeathEmotePrefab, this.transform);
+        floatingIcon.GetComponent<RectTransform>().position = posInScreen;
     }
 }

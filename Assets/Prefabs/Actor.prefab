@@ -46,6 +46,7 @@ GameObject:
   - component: {fileID: -3766854650525375879}
   - component: {fileID: -1088668400626013394}
   - component: {fileID: 819490803204869717}
+  - component: {fileID: 2561514317527961951}
   m_Layer: 0
   m_Name: Actor
   m_TagString: Untagged
@@ -118,7 +119,18 @@ MonoBehaviour:
   m_MaxHealth: 0
   OnDeath:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2561514317527961951}
+        m_MethodName: ShowDeathEmote
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   OnHealthChange:
@@ -248,6 +260,11 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+  OnDeathAnimationEnded:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!114 &-1088668400626013394
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -273,6 +290,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f5a5d43d28ba2774bbd6f552659f2af5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2561514317527961951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7938837959081745292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb0bd8c7b9a861e4dad1c87c88acc3fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &8859046460318972673
