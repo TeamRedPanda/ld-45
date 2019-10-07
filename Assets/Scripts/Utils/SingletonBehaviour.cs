@@ -5,6 +5,8 @@ using UnityEngine;
 public class SingletonBehaviour<TObject> : MonoBehaviour
     where TObject : SingletonBehaviour<TObject>
 {
+    public bool DontDestroyOnLoad = false;
+
     public static TObject Instance {
         get {
             if (m_Instance != null)
@@ -31,7 +33,8 @@ public class SingletonBehaviour<TObject> : MonoBehaviour
         if (m_Instance == null) {
             m_Instance = (TObject)this;
 
-            DontDestroyOnLoad(this);
+            if (DontDestroyOnLoad == true) 
+                DontDestroyOnLoad(this);
         }
     }
 
