@@ -26,12 +26,12 @@ public class AnimationEventReceiver : MonoBehaviour
         OnActivePhaseEnd.Invoke();
     }
 
-    public void AttackAnimationStarted()
+    public void LockMovement()
     {
         OnAttackAnimationStart.Invoke();
     }
 
-    public void BackswingAnimationStarted()
+    public void UnlockMovement()
     {
         OnBackswingAnimationStart.Invoke();
     }
