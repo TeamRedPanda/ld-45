@@ -10,7 +10,13 @@ public abstract class WeaponAsset : ScriptableObject
     public GameObject WeaponPrefab;
     public GameObject HitAreaPrefab;
 
-    public abstract void Attack(GameObject actor);
+    public string AttackAnimationTrigger;
+
+    public virtual void Attack(GameObject actor)
+    {
+        var animationController = actor.GetComponent<ActorAnimationController>();
+        animationController?.PlayAttackAnimation(AttackAnimationTrigger);
+    }
 
     public virtual void OnActivePhase(GameObject hitArea) { }
 }
