@@ -1305,6 +1305,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 754887309926768735, guid: 0fbd93d9e51995f4f8d84cb9fdc471b5,
+        type: 3}
+      propertyPath: m_PreEquippedWeapon
+      value: 
+      objectReference: {fileID: 11400000, guid: 27186af018600df4184879bed8fe121e,
+        type: 2}
     - target: {fileID: 5931822409462552835, guid: 0fbd93d9e51995f4f8d84cb9fdc471b5,
         type: 3}
       propertyPath: OnDeath.m_PersistentCalls.m_Calls.Array.data[1].m_Target
