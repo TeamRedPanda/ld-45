@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using Random = UnityEngine.Random;
 
 [System.Serializable]
@@ -37,6 +38,16 @@ public class GameController : MonoBehaviour
     void Awake()
     {
         StartRound();
+    }
+
+    public void RestartLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void ShowGameOverScreen()
+    {
+        m_GameOverWindow.SetActive(true);
     }
 
     void SpawnEnemies()

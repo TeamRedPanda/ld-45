@@ -42,7 +42,6 @@ GameObject:
   - component: {fileID: 430849352191686646}
   - component: {fileID: 9201345812078891769}
   - component: {fileID: 2940765707134784114}
-  - component: {fileID: -3685471495050429115}
   - component: {fileID: -3766854650525375879}
   - component: {fileID: -1088668400626013394}
   - component: {fileID: 819490803204869717}
@@ -154,25 +153,6 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: HitReceivedEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
---- !u!95 &-3685471495050429115
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7938837959081745292}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 6c88e613eb7e2f0458ed223adf428aa2, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 1
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &-3766854650525375879
 MonoBehaviour:
   m_ObjectHideFlags: 0
