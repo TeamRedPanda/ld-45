@@ -17,6 +17,8 @@ class WeaponHitArea : MonoBehaviour
 
     private bool m_IsActive = false;
 
+    private List<ActorHealth> m_ActorsHit = new List<ActorHealth>();
+
     public void SetHitArea(GameObject area)
     {
         if (HitArea != null)
@@ -29,6 +31,9 @@ class WeaponHitArea : MonoBehaviour
     public void EnableHitArea()
     {
         m_IsActive = true;
+
+        // Reset the actors hit here, we're dealing a new blow.
+        m_ActorsHit.Clear();
     }
 
     public void DisableHitArea()
@@ -40,8 +45,11 @@ class WeaponHitArea : MonoBehaviour
     {
         Debug.Log(other.gameObject.name);
         var actorHealth = other.gameObject.GetComponentInParent<ActorHealth>();
-        if (actorHealth && m_IsActive)
+        var alreadyHit = m_ActorsHit.Contains(actorHealth);
+        if (actorHealth && m_IsActive && alreadyHit == false) {
             OnHitEvent.Invoke(actorHealth);
+            m_ActorsHit.Add(actorHealth);
+        }
     }
 }
 
