@@ -425,9 +425,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 6aa58983b3ffa8a4796f692e13bea704, type: 2}
   m_SpawnInfos:
   - FistCount: 1
-    SwordCount: 1
-    BowCount: 1
-    WandCount: 1
+    SwordCount: 0
+    BowCount: 0
+    WandCount: 0
   - FistCount: 2
     SwordCount: 0
     BowCount: 0
@@ -1509,7 +1509,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1687258581}
-  m_LocalRotation: {x: 0.27854288, y: -0.64993376, z: 0.27854314, w: 0.64993364}
+  m_LocalRotation: {x: 0.27854288, y: -0.6499337, z: 0.27854308, w: 0.6499337}
   m_LocalPosition: {x: 20, y: 21, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -2104,7 +2104,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4350586216745279156}
-  m_LocalRotation: {x: 0.27854288, y: -0.64993376, z: 0.27854314, w: 0.64993364}
+  m_LocalRotation: {x: 0.27854288, y: -0.6499337, z: 0.27854308, w: 0.6499337}
   m_LocalPosition: {x: 20, y: 21, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:

@@ -129,6 +129,8 @@ public class GameController : MonoBehaviour
         ClearEnemies();
         SpawnEnemies();
 
+        m_Player.GetComponent<ActorHealth>().HealPercentageOfLostHp(0.7f);
+
         // Reset player position
         m_Player.transform.position = m_PlayerSpawnPoint.transform.position;
         m_Player.transform.rotation = m_PlayerSpawnPoint.transform.rotation;

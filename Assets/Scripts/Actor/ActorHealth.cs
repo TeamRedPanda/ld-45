@@ -28,6 +28,13 @@ public class ActorHealth : MonoBehaviour
         OnHealthChange.Invoke(m_CurrentHealth, m_MaxHealth);
     }
 
+    public void HealPercentageOfLostHp(float amount)
+    {
+        m_CurrentHealth += Mathf.RoundToInt((m_MaxHealth - m_CurrentHealth) * amount);
+        if (m_CurrentHealth > m_MaxHealth)
+            m_CurrentHealth = m_MaxHealth;
+    }
+
     public void InstantDeath()
     {
         if (m_IsDead)
