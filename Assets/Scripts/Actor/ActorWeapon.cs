@@ -24,7 +24,7 @@ public class ActorWeapon : MonoBehaviour
     public void EquipWeapon(WeaponAsset weapon)
     {
         // Remove old weapon
-        foreach(Transform child in m_WeaponEquipParent.transform) {
+        foreach (Transform child in m_WeaponEquipParent.transform) {
             Destroy(child.gameObject);
         }
 
