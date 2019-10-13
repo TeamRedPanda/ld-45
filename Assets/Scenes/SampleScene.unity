@@ -991,17 +991,17 @@ PrefabInstance:
     - target: {fileID: 3700743219233372106, guid: cd773e816d0db004b98114bb5533d203,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -47.184998
+      value: -47
       objectReference: {fileID: 0}
     - target: {fileID: 3700743219233372106, guid: cd773e816d0db004b98114bb5533d203,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -144.77213
+      value: -144
       objectReference: {fileID: 0}
     - target: {fileID: 3700743219233372106, guid: cd773e816d0db004b98114bb5533d203,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 56.799988
+      value: 56
       objectReference: {fileID: 0}
     - target: {fileID: 3700743219233372106, guid: cd773e816d0db004b98114bb5533d203,
         type: 3}
